@@ -1,12 +1,12 @@
 /***
  *      @author Victor Chimenti, MSCS-SE '20
- *      @file image-panel-text-html.js
- *      @see Seattle University School of Law Image Panel Content Type
+ *      @file call-to-action-text-html.js
+ *      @see Seattle University School of Law Call to Action Feature COntent Type
  *      law/text/html
  *
  *      Document will write once when the page loads
  *
- *      @version 1.24
+ *      @version 2.0
  */
 
 
