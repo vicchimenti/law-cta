@@ -1,1 +1,1 @@
-# law-cta
+# Law Call to Action Content Type
