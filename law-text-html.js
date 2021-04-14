@@ -6,7 +6,7 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 2.3
+ *      @version 2.4
  */
 
 
@@ -69,9 +69,9 @@
     // var descriptionString = '<div>' + description + '</div>';
 
     var imageString = '<img class="card-image" src="' + backgroundImage +'" alt="decorative background image for ' + headline + '">';
-    var openOverlay = '<div class="card-img-overlay card-inverse">';
+    var openOverlay = '<div class="card-img-overlay card-inverse p-0">';
     var closeOverlay = '</div>';
-    var opneOverlayStyle = '<div class="callToActionOverlay callToActionOverlayColor' + colorOverlay + '">';
+    var opneOverlayStyle = '<div class="callToActionOverlay callToActionOverlayColor' + colorOverlay + ' m-0">';
     var closeOverlayStyle = '</div>';
     var openBlock = '<div class="card-block">';
     var closeBlock = '</div>';
