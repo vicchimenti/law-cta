@@ -6,7 +6,7 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 2.1
+ *      @version 2.2
  */
 
 
@@ -55,19 +55,17 @@
      *  Declare/Assign local variables with default formatting and values
      * 
      * */
-    var openStandardContent = '<div class="panelText card-text"><div class="standardContent">';
-    var closeStandardContent = '</div></div>'
+
+
+    // var openStandardContent = '<div class="panelText card-text"><div class="standardContent">';
+    // var closeStandardContent = '</div></div>'
     // var openPanelInner = '<div class="panelInner col-12 col-lg-4 shadow ' + textLocation + '">';
-    var closePanelInner = '</div>';
+    // var closePanelInner = '</div>';
     // var openPanelContainer = '<div class="panelFlexContainer ' + textLocation + '">'
-    var closePanelContainer = '</div>';
-
-
-
-
-    var openBlock = '<div class="card-block">';
-    var closeBlock = '</div>';
-    var btnTwoString = '<li class="hidden visually-hidden"><a href="#" class="hidden visually-hidden card-link h-100" title="No Valid Link Provided"><span class="hidden visually-hidden d-inline-block align-middle">No Valid Link Provided</span></a></li>';
+    // var closePanelContainer = '</div>';
+    // var openBlock = '<div class="card-block">';
+    // var closeBlock = '</div>';
+    // var btnTwoString = '<li class="hidden visually-hidden"><a href="#" class="hidden visually-hidden card-link h-100" title="No Valid Link Provided"><span class="hidden visually-hidden d-inline-block align-middle">No Valid Link Provided</span></a></li>';
 
     // var descriptionString = '<div>' + description + '</div>';
 
@@ -84,7 +82,7 @@
     var openButtonWrapper = '<li class="callToActionButton">';
     var closeButtonWrapper = '</li>';
     var btnOneString = '<a href="' + btnOneLink + '" title="' + btnOneTitle + '">' + btnOneText + '</a><div class="callToActionButtonArrow"></div>';
-    var buttonListString = '' + openButtonWrapper + closeButtonWrapper + '';
+    var buttonListString = '' + openButtonWrapper + btnOneString + closeButtonWrapper + '';
     var beginningHTML = '<div class="callToActionWrapper contentItem container-fluid card border-0 g-0" title="' + headline + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="' + zoneOption + '" role="presentation" >';
     var endingHTML = '</div>';
 
@@ -96,12 +94,12 @@
      *      Button Links
      * 
      * */
-    if (btnOneLink != "") {
-        btnOneString = '<li><a href="' + btnOneLink + '" class="card-link h-100" title="' + btnOneTitle + '"><span class="d-inline-block align-middle">' + btnOneText + '</span></a></li>';
-    }
-    if (btnTwoLink != "") {
-        btnTwoString = '<li><a href="' + btnTwoLink + '" class="card-link h-100" title="' + btnTwoTitle + '"><span class="d-inline-block align-middle">' + btnTwoText + '</span></a></li>';
-    }
+    // if (btnOneLink != "") {
+    //     btnOneString = '<li><a href="' + btnOneLink + '" class="card-link h-100" title="' + btnOneTitle + '"><span class="d-inline-block align-middle">' + btnOneText + '</span></a></li>';
+    // }
+    // if (btnTwoLink != "") {
+    //     btnTwoString = '<li><a href="' + btnTwoLink + '" class="card-link h-100" title="' + btnTwoTitle + '"><span class="d-inline-block align-middle">' + btnTwoText + '</span></a></li>';
+    // }
 
 
 
@@ -121,17 +119,17 @@
 
 
 
-    document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, openBlock));
-    document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, openPanelContainer));
-    document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, openPanelInner));
-    document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, openStandardContent));
+    // document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, openBlock));
+    // document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, openPanelContainer));
+    // document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, openPanelInner));
+    // document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, openStandardContent));
     // document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, descriptionString));
-    document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, btnOneString));
-    document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, btnTwoString));
-    document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, closeStandardContent));
-    document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, closePanelInner));
-    document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, closePanelContainer));
-    document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, closeBlock));
+    // document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, btnOneString));
+    // document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, btnTwoString));
+    // document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, closeStandardContent));
+    // document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, closePanelInner));
+    // document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, closePanelContainer));
+    // document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, closeBlock));
 
 
 
