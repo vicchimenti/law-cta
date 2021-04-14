@@ -6,7 +6,7 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 2.8
+ *      @version 2.9
  */
 
 
@@ -54,7 +54,7 @@
     var closeOverlay = '</div>';
     var opneOverlayStyle = '<div class="callToActionOverlay callToActionOverlayColor' + colorOverlay + ' m-0">';
     var closeOverlayStyle = '</div>';
-    var openBlock = '<div class="card-block">';
+    var openBlock = '<div class="card-block p-1 m-1">';
     var closeBlock = '</div>';
     var openCallToAction = '<div class="callToAction">';
     var closeCallToAction = '</div>';
@@ -89,7 +89,7 @@
 
 
 
-    
+
     /***
      *  Write the document once
      * 
