@@ -54,7 +54,7 @@
     var closeOverlay = '</div>';
     var opneOverlayStyle = '<div class="callToActionOverlay callToActionOverlayColor' + colorOverlay + ' m-0">';
     var closeOverlayStyle = '</div>';
-    var openBlock = '<div class="card-block p-1 m-1">';
+    var openBlock = '<div class="card-block p-1">';
     var closeBlock = '</div>';
     var openCallToAction = '<div class="callToAction">';
     var closeCallToAction = '</div>';
