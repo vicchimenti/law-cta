@@ -74,9 +74,11 @@
     var closeLinksList = '</ul>';
     // var descriptionString = '<div>' + description + '</div>';
 
-    var imageString = '<img class="card-image-top" src="' + backgroundImage +'">';
+    var imageString = '<img class="card-image" src="' + backgroundImage +'">';
     var openOverlay = '<div class="card-img-overlay card-inverse">';
     var closeOverlay = '</div>';
+    var opneOverlayStyle = '<div class="callToActionOverlay callToActionOverlayColor' + colorOverlay + '">';
+    var closeOverlayStyle = '</div>';
     var beginningHTML = '<div class="callToActionWrapper contentItem container-fluid card border-0 g-0" title="' + headline + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="' + zoneOption + '" role="presentation" >';
     var endingHTML = '</div>';
 
@@ -105,6 +107,8 @@
     document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, anchorTag));
     document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, imageString));
     document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, openOverlay));
+    document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, opneOverlayStyle));
+
 
 
 
@@ -124,7 +128,7 @@
     document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, closeBlock));
 
 
-
+    document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, closeOverlayStyle));
     document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, closeOverlay));
     document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, endingHTML));
 
