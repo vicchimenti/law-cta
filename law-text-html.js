@@ -49,7 +49,6 @@
      *  Declare/Assign local variables with default formatting and values
      * 
      * */
-
     var imageString = '<img class="card-image" src="' + backgroundImage +'" alt="decorative background image for ' + headline + '">';
     var openOverlay = '<div class="card-img-overlay card-inverse p-0">';
     var closeOverlay = '</div>';
@@ -90,6 +89,7 @@
 
 
 
+    
     /***
      *  Write the document once
      * 
