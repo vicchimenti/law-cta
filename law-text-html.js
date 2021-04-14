@@ -6,7 +6,7 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 2.5
+ *      @version 2.6
  */
 
 
@@ -80,10 +80,10 @@
     var headlineString = '<h2 class="callToActionHeaderColor' + headlineColor + '" id="label' + contentID + '">' + headline + '</h2>';
     var openLinksList = '<ul class="callToActionButtonWrapper standardContent">';
     var closeLinksList = '</ul>';
-    var openButtonWrapper = '<li class="callToActionButton">';
-    var closeButtonWrapper = '</li>';
-    var btnOneString = '<a href="' + btnOneLink + '" title="' + btnOneTitle + '">' + btnOneText + '</a><div class="callToActionButtonArrow"></div>';
-    var buttonListString = '' + openButtonWrapper + btnOneString + closeButtonWrapper + '';
+    // var openButtonWrapper = '<li class="callToActionButton">';
+    // var closeButtonWrapper = '</li>';
+    var btnOneString = '<li class="callToActionButton"><a href="' + btnOneLink + '" title="' + btnOneTitle + '">' + btnOneText + '</a></li><div class="callToActionButtonArrow"></div>';
+    var buttonListString = '' + btnOneString + '';
     var beginningHTML = '<div class="callToActionWrapper contentItem container-fluid g-0" title="' + headline + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="' + zoneOption + '" role="presentation" ><div class="col-12 card border-0">';
     var endingHTML = '</div></div>';
 
@@ -97,13 +97,13 @@
      * */
     if (btnTwoLink != "" && btnTwoText != "") {
 
-        var btnTwoString = '<a href="' + btnTwoLink + '" title="' + btnTwoTitle + '">' + btnTwoText + '</a><div class="callToActionButtonArrow"></div>';
-        buttonListString = '' + openButtonWrapper + btnOneString + btnTwoString + closeButtonWrapper + '';
+        var btnTwoString = '<li class="callToActionButton"><a href="' + btnTwoLink + '" title="' + btnTwoTitle + '">' + btnTwoText + '</a></li><div class="callToActionButtonArrow"></div>';
+        buttonListString = '' + btnOneString + btnTwoString + '';
 
         if (btnThreeLink != "" && btnThreeText != "") {
 
-            var btnThreeString = '<a href="' + btnThreeLink + '" title="' + btnThreeTitle + '">' + btnThreeText + '</a><div class="callToActionButtonArrow"></div>';
-            buttonListString = '' + openButtonWrapper + btnOneString + btnTwoString + btnThreeString + closeButtonWrapper + '';
+            var btnThreeString = '<li class="callToActionButton"><a href="' + btnThreeLink + '" title="' + btnThreeTitle + '">' + btnThreeText + '</a></li><div class="callToActionButtonArrow"></div>';
+            buttonListString = '' + btnOneString + btnTwoString + btnThreeString + '';
 
         }
     }
