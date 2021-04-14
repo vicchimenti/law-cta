@@ -95,12 +95,18 @@
      *      Button Links
      * 
      * */
-    // if (btnOneLink != "") {
-    //     btnOneString = '<li><a href="' + btnOneLink + '" class="card-link h-100" title="' + btnOneTitle + '"><span class="d-inline-block align-middle">' + btnOneText + '</span></a></li>';
-    // }
-    // if (btnTwoLink != "") {
-    //     btnTwoString = '<li><a href="' + btnTwoLink + '" class="card-link h-100" title="' + btnTwoTitle + '"><span class="d-inline-block align-middle">' + btnTwoText + '</span></a></li>';
-    // }
+    if (btnTwoLink != "" && btnTwoText != "") {
+
+        var btnTwoString = '<a href="' + btnTwoLink + '" title="' + btnTwoTitle + '">' + btnTwoText + '</a><div class="callToActionButtonArrow"></div>';
+        buttonListString = '' + openButtonWrapper + btnOneString + btnTwoString + closeButtonWrapper + '';
+
+        if (btnThreeLink != "" && btnThreeText != "") {
+
+            var btnThreeString = '<a href="' + btnThreeLink + '" title="' + btnThreeTitle + '">' + btnThreeText + '</a><div class="callToActionButtonArrow"></div>';
+            buttonListString = '' + openButtonWrapper + btnOneString + btnTwoString + btnThreeString + closeButtonWrapper + '';
+
+        }
+    }
 
 
 
