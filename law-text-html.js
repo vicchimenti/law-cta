@@ -82,7 +82,7 @@
     var closeLinksList = '</ul>';
     // var openButtonWrapper = '<li class="callToActionButton">';
     // var closeButtonWrapper = '</li>';
-    var btnOneString = '<li class="callToActionButton"><a href="' + btnOneLink + '" title="' + btnOneTitle + '">' + btnOneText + '</a></li><div class="callToActionButtonArrow"></div>';
+    var btnOneString = '<li class="callToActionButton"><a href="' + btnOneLink + '" title="' + btnOneTitle + '">' + btnOneText + '</a></li>';
     var buttonListString = '' + btnOneString + '';
     var beginningHTML = '<div class="callToActionWrapper contentItem container-fluid g-0" title="' + headline + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="' + zoneOption + '" role="presentation" ><div class="col-12 card border-0">';
     var endingHTML = '</div></div>';
@@ -97,12 +97,12 @@
      * */
     if (btnTwoLink != "" && btnTwoText != "") {
 
-        var btnTwoString = '<li class="callToActionButton"><a href="' + btnTwoLink + '" title="' + btnTwoTitle + '">' + btnTwoText + '</a></li><div class="callToActionButtonArrow"></div>';
+        var btnTwoString = '<li class="callToActionButton"><a href="' + btnTwoLink + '" title="' + btnTwoTitle + '">' + btnTwoText + '</a></li>';
         buttonListString = '' + btnOneString + btnTwoString + '';
 
         if (btnThreeLink != "" && btnThreeText != "") {
 
-            var btnThreeString = '<li class="callToActionButton"><a href="' + btnThreeLink + '" title="' + btnThreeTitle + '">' + btnThreeText + '</a></li><div class="callToActionButtonArrow"></div>';
+            var btnThreeString = '<li class="callToActionButton"><a href="' + btnThreeLink + '" title="' + btnThreeTitle + '">' + btnThreeText + '</a></li>';
             buttonListString = '' + btnOneString + btnTwoString + btnThreeString + '';
 
         }
