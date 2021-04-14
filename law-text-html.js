@@ -6,7 +6,7 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 2.6
+ *      @version 2.7
  */
 
 
@@ -78,7 +78,7 @@
     var openCallToAction = '<div class="callToAction">';
     var closeCallToAction = '</div>';
     var headlineString = '<h2 class="callToActionHeaderColor' + headlineColor + '" id="label' + contentID + '">' + headline + '</h2>';
-    var openLinksList = '<ul class="callToActionButtonWrapper standardContent">';
+    var openLinksList = '<ul class="callToActionButtonWrapper standardContent d-flex justify-content-between">';
     var closeLinksList = '</ul>';
     // var openButtonWrapper = '<li class="callToActionButton">';
     // var closeButtonWrapper = '</li>';
