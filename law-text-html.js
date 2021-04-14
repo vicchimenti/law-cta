@@ -67,7 +67,6 @@
 
     var openBlock = '<div class="card-block">';
     var closeBlock = '</div>';
-    var btnOneString = '<li class="hidden visually-hidden"><a href="#" class="hidden visually-hidden card-link h-100" title="No Valid Link Provided"><span class="hidden visually-hidden d-inline-block align-middle">No Valid Link Provided</span></a></li>';
     var btnTwoString = '<li class="hidden visually-hidden"><a href="#" class="hidden visually-hidden card-link h-100" title="No Valid Link Provided"><span class="hidden visually-hidden d-inline-block align-middle">No Valid Link Provided</span></a></li>';
 
     // var descriptionString = '<div>' + description + '</div>';
@@ -84,6 +83,8 @@
     var closeLinksList = '</ul>';
     var openButtonWrapper = '<li class="callToActionButton">';
     var closeButtonWrapper = '</li>';
+    var btnOneString = '<a href="' + btnOneLink + '" title="' + btnOneTitle + '">' + btnOneText + '</a><div class="callToActionButtonArrow"></div>';
+    var buttonListString = '' + openButtonWrapper + closeButtonWrapper + '';
     var beginningHTML = '<div class="callToActionWrapper contentItem container-fluid card border-0 g-0" title="' + headline + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="' + zoneOption + '" role="presentation" >';
     var endingHTML = '</div>';
 
@@ -116,7 +117,7 @@
     document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, openCallToAction));
     document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, headlineString));
     document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, openLinksList));
-
+    document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, buttonListString));
 
 
 
