@@ -77,7 +77,7 @@
     var closeBlock = '</div>';
     var openCallToAction = '<div class="callToAction">';
     var closeCallToAction = '</div>';
-    var headlineString = '<h2 class="callToActionHeaderColor' + headlineColor + '" id="label' + contentID + '">' + headline + '</h2>';
+    var headlineString = '<h2 class="callToActionHeaderColor' + headlineColor + ' card-title" id="label' + contentID + '">' + headline + '</h2>';
     var openLinksList = '<ul class="callToActionButtonWrapper standardContent d-flex justify-content-between">';
     var closeLinksList = '</ul>';
     // var openButtonWrapper = '<li class="callToActionButton">';
