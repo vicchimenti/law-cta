@@ -54,11 +54,11 @@
     var closeOverlay = '</div>';
     var opneOverlayStyle = '<div class="callToActionOverlay callToActionOverlayColor' + colorOverlay + ' m-0">';
     var closeOverlayStyle = '</div>';
-    var openBlock = '<div class="card-block p-3">';
+    var openBlock = '<div class="card-block px-3 py-1 mb-1">';
     var closeBlock = '</div>';
     var openCardTitle = '<div class="card-title p-3">';
     var closeCardTitle = '</div>';
-    var headlineString = '<h2 class="callToActionHeaderColor' + headlineColor + '" id="label' + contentID + '">' + headline + '</h2>';
+    var headlineString = '<h2 class="callToActionHeaderColor' + headlineColor + ' my-2" id="label' + contentID + '">' + headline + '</h2>';
     var openLinksList = '<ul class="callToActionButtonWrapper standardContent d-flex flex-nowrap justify-content-between">';
     var closeLinksList = '</ul>';
     var btnOneString = '<li class="callToActionButton"><a href="' + btnOneLink + '" title="' + btnOneTitle + '">' + btnOneText + '</a></li>';
