@@ -1,0 +1,92 @@
+/*********************
+*
+*   Call to Action Feature
+*
+**/
+
+
+
+.callToActionWrapper .card-title h2 {
+    font-size: 1rem;
+}
+
+
+/* Galaxy Fold (less than 280px) */
+@media only screen and (max-width: 279.99px) {
+
+    .callToActionWrapper .card-title h2 {
+        font-size: 0.4rem;
+    }
+}
+
+
+/* iPhone X (less than 376px) */
+@media only screen and (max-width: 375.99px) {
+
+    .callToActionWrapper .card-title h2 {
+        font-size: 0.5rem;
+    }
+}
+
+
+/* Surface Duo (less than 540px) */
+@media only screen and (max-width: 539.99px) {
+
+    .callToActionWrapper .card-title h2 {
+        font-size: 0.75rem;
+    }
+}
+
+
+/* ***** Mobile Up ***** */
+@media screen and (min-width: 576px) {
+
+    .callToActionWrapper .card-title h2 {
+        font-size: 1.25rem;
+    }
+}
+
+
+/* ***  Medium min Defaults   *** */
+@media screen and (min-width : 768px) {
+
+    .callToActionWrapper .card-title h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* ***  Large min Defaults   *** */
+@media screen and (min-width: 992px) {
+
+    .callToActionWrapper .card-title h2 {
+        font-size: 2rem;
+    }
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+
+    .callToActionWrapper .card-title h2 {
+        font-size: 2.5rem;
+    }
+}
+
+
+/* X Large devices (large desktops, 1366px and up) */
+@media screen and (min-width: 1366px) {
+
+    .callToActionWrapper .card-title h2 {
+        font-size: 3rem;
+    }
+}
+
+
+/* XX Large devices (large desktops, 1920px and up) */
+@media screen and (min-width: 1920px) {
+
+    .callToActionWrapper .card-title h2 {
+        font-size: 4.25rem;
+    }
+}
