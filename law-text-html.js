@@ -84,8 +84,8 @@
     var closeButtonWrapper = '</li>';
     var btnOneString = '<a href="' + btnOneLink + '" title="' + btnOneTitle + '">' + btnOneText + '</a><div class="callToActionButtonArrow"></div>';
     var buttonListString = '' + openButtonWrapper + btnOneString + closeButtonWrapper + '';
-    var beginningHTML = '<div class="callToActionWrapper contentItem container-fluid card border-0 g-0" title="' + headline + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="' + zoneOption + '" role="presentation" >';
-    var endingHTML = '</div>';
+    var beginningHTML = '<div class="callToActionWrapper contentItem container-fluid g-0" title="' + headline + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="' + zoneOption + '" role="presentation" ><div class="col-12 card border-0">';
+    var endingHTML = '</div></div>';
 
 
 
