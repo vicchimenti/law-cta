@@ -61,12 +61,12 @@
     var headlineString = '<h2 class="callToActionHeaderColor' + headlineColor + ' my-2" id="label' + contentID + '">' + headline + '</h2>';
     var openLinksList = '<ul class="callToActionButtonWrapper standardContent d-flex flex-nowrap justify-content-between">';
     var closeLinksList = '</ul>';
-    var btnOneString = '<li class="callToActionButton"><a href="' + btnOneLink + '" title="' + btnOneTitle + '">' + btnOneText + '</a></li>';
+    var btnOneString = '<li class="callToActionButton"><a href="' + btnOneLink + '" title="' + btnOneTitle + '" class="btn" role="button" data-bs-toggle="button">' + btnOneText + '</a></li>';
     var buttonListString = '' + btnOneString + '';
     var beginningHTML = '<div class="callToActionWrapper contentItem container-fluid g-0" title="' + headline + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="' + zoneOption + '" role="presentation" ><div class="col-12 card border-0">';
     var endingHTML = '</div></div>';
 
-
+    class="btn btn-primary" role="button" data-bs-toggle="button"
 
 
     /***
