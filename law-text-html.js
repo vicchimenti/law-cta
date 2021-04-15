@@ -76,22 +76,22 @@
      * */
     if (btnTwoLink != "" && btnTwoText != "") {
 
-        var btnTwoString = '<li class="callToActionButton"><a href="' + btnTwoLink + '" title="' + btnTwoTitle + '">' + btnTwoText + '</a></li>';
+        var btnTwoString = '<li class="callToActionButton"><a href="' + btnTwoLink + '" title="' + btnTwoTitle + '" class="btn" role="button" data-bs-toggle="button">' + btnTwoText + '</a></li>';
         buttonListString += '' + btnTwoString + '';
 
         if (btnThreeLink != "" && btnThreeText != "") {
 
-            var btnThreeString = '<li class="callToActionButton"><a href="' + btnThreeLink + '" title="' + btnThreeTitle + '">' + btnThreeText + '</a></li>';
+            var btnThreeString = '<li class="callToActionButton"><a href="' + btnThreeLink + '" title="' + btnThreeTitle + '" class="btn" role="button" data-bs-toggle="button">' + btnThreeText + '</a></li>';
             buttonListString += '' + btnThreeString + '';
 
             if (btnFourLink != "" && btnFourText != "") {
 
-                var btnFourString = '<li class="callToActionButton"><a href="' + btnFourLink + '" title="' + btnFourTitle + '">' + btnFourText + '</a></li>';
+                var btnFourString = '<li class="callToActionButton"><a href="' + btnFourLink + '" title="' + btnFourTitle + '" class="btn" role="button" data-bs-toggle="button">' + btnFourText + '</a></li>';
                 buttonListString += '' + btnFourString + '';
 
                 if (btnFiveLink != "" && btnFiveText != "") {
 
-                    var btnFiveString = '<li class="callToActionButton"><a href="' + btnFiveLink + '" title="' + btnFiveTitle + '">' + btnFiveText + '</a></li>';
+                    var btnFiveString = '<li class="callToActionButton"><a href="' + btnFiveLink + '" title="' + btnFiveTitle + '" class="btn" role="button" data-bs-toggle="button">' + btnFiveText + '</a></li>';
                     buttonListString += ''  + btnFiveString + '';
         
                 }
