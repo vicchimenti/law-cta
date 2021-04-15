@@ -10,6 +10,18 @@
     font-size: 1rem;
 }
 
+.card-block .callToActionButtonWrapper.standardContent {
+    max-width: unset;
+}
+
+.card-block .callToActionButton a {
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 0.25rem;
+}
+
+
+
 
 /* Galaxy Fold (less than 280px) */
 @media only screen and (max-width: 279.99px) {
@@ -38,11 +50,26 @@
 }
 
 
+/* Small Max (less than 992px) */
+@media screen and (max-width: 991.99px) {
+
+    .callToActionOverlay .card-title.p-3 {
+        padding-bottom: 0.25rem!important;
+    }
+}
+
+
 /* ***** Mobile Up ***** */
 @media screen and (min-width: 576px) {
 
     .callToActionWrapper .card-title h2 {
         font-size: 1.25rem;
+    }
+
+    .card-block .callToActionButton a {
+        font-size: 1rem;
+        line-height: 1rem;
+        padding: 0.45rem;
     }
 }
 
@@ -53,6 +80,17 @@
     .callToActionWrapper .card-title h2 {
         font-size: 1.5rem;
     }
+
+    ul.callToActionButtonWrapper li.callToActionButton {
+        margin: 0 10px;
+        padding: 0.5rem;
+    }
+
+    .card-block .callToActionButton a {
+        font-size: 1.15rem;
+        line-height: 1.5rem;
+        padding: 0.5rem;
+    }
 }
 
 
@@ -62,14 +100,35 @@
     .callToActionWrapper .card-title h2 {
         font-size: 2rem;
     }
+
+    ul.callToActionButtonWrapper li.callToActionButton {
+        margin: 0 15px;
+        padding: 1rem;
+    }
+
+    .card-block .callToActionButton a {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        padding: 0.5rem;
+    }
 }
 
 
 /* Large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
 
+    .callToActionWrapper .card-title {
+        margin-bottom: 1rem;
+    }
+
     .callToActionWrapper .card-title h2 {
         font-size: 2.5rem;
+    }
+
+    .card-block .callToActionButton a {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding: 0.7rem;
     }
 }
 
@@ -77,8 +136,18 @@
 /* X Large devices (large desktops, 1366px and up) */
 @media screen and (min-width: 1366px) {
 
+    .callToActionWrapper .card-title {
+        margin-bottom: 2rem;
+    }
+
     .callToActionWrapper .card-title h2 {
         font-size: 3rem;
+    }
+
+    .card-block .callToActionButton a {
+        font-size: 1.75rem;
+        line-height: 2.2rem;
+        padding: 0.75rem;
     }
 }
 
@@ -86,7 +155,17 @@
 /* XX Large devices (large desktops, 1920px and up) */
 @media screen and (min-width: 1920px) {
 
+    .callToActionWrapper .card-title {
+        margin-bottom: 3rem;
+    }
+
     .callToActionWrapper .card-title h2 {
         font-size: 4.25rem;
+    }
+
+    .card-block .callToActionButton a {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        padding: 1rem;
     }
 }
