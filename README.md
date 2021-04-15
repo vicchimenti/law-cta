@@ -6,4 +6,4 @@
 - [x] 5 Links
 - [] button hover
 - [] buttons below 767
-- [] import styles
+- [x] import styles
