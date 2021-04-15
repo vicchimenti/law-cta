@@ -61,12 +61,12 @@
     var headlineString = '<h2 class="callToActionHeaderColor' + headlineColor + ' my-2" id="label' + contentID + '">' + headline + '</h2>';
     var openLinksList = '<ul class="callToActionButtonWrapper standardContent d-flex flex-nowrap justify-content-between">';
     var closeLinksList = '</ul>';
-    var btnOneString = '<li class="callToActionButton"><a href="' + btnOneLink + '" title="' + btnOneTitle + '" class="btn" role="button" data-bs-toggle="button">' + btnOneText + '</a></li>';
+    var btnOneString = '<li class="callToActionButton"><a href="' + btnOneLink + '" title="' + btnOneTitle + '">' + btnOneText + '</a></li>';
     var buttonListString = '' + btnOneString + '';
     var beginningHTML = '<div class="callToActionWrapper contentItem container-fluid g-0" title="' + headline + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="' + zoneOption + '" role="presentation" ><div class="col-12 card border-0">';
     var endingHTML = '</div></div>';
 
-    class="btn btn-primary" role="button" data-bs-toggle="button"
+
 
 
     /***
@@ -76,22 +76,22 @@
      * */
     if (btnTwoLink != "" && btnTwoText != "") {
 
-        var btnTwoString = '<li class="callToActionButton"><a href="' + btnTwoLink + '" title="' + btnTwoTitle + '" class="btn" role="button" data-bs-toggle="button">' + btnTwoText + '</a></li>';
+        var btnTwoString = '<li class="callToActionButton"><a href="' + btnTwoLink + '" title="' + btnTwoTitle + '">' + btnTwoText + '</a></li>';
         buttonListString += '' + btnTwoString + '';
 
         if (btnThreeLink != "" && btnThreeText != "") {
 
-            var btnThreeString = '<li class="callToActionButton"><a href="' + btnThreeLink + '" title="' + btnThreeTitle + '" class="btn" role="button" data-bs-toggle="button">' + btnThreeText + '</a></li>';
+            var btnThreeString = '<li class="callToActionButton"><a href="' + btnThreeLink + '" title="' + btnThreeTitle + '">' + btnThreeText + '</a></li>';
             buttonListString += '' + btnThreeString + '';
 
             if (btnFourLink != "" && btnFourText != "") {
 
-                var btnFourString = '<li class="callToActionButton"><a href="' + btnFourLink + '" title="' + btnFourTitle + '" class="btn" role="button" data-bs-toggle="button">' + btnFourText + '</a></li>';
+                var btnFourString = '<li class="callToActionButton"><a href="' + btnFourLink + '" title="' + btnFourTitle + '">' + btnFourText + '</a></li>';
                 buttonListString += '' + btnFourString + '';
 
                 if (btnFiveLink != "" && btnFiveText != "") {
 
-                    var btnFiveString = '<li class="callToActionButton"><a href="' + btnFiveLink + '" title="' + btnFiveTitle + '" class="btn" role="button" data-bs-toggle="button">' + btnFiveText + '</a></li>';
+                    var btnFiveString = '<li class="callToActionButton"><a href="' + btnFiveLink + '" title="' + btnFiveTitle + '">' + btnFiveText + '</a></li>';
                     buttonListString += ''  + btnFiveString + '';
         
                 }
