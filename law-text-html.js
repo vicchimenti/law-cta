@@ -1,7 +1,7 @@
 /***
  *      @author Victor Chimenti, MSCS-SE '20
  *      @file call-to-action-text-html.js
- *      @see Seattle University School of Law Call to Action Feature COntent Type
+ *      @see Seattle University School of Law Call to Action Feature Content Type
  *      law/text/html
  *
  *      Document will write once when the page loads
