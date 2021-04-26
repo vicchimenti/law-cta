@@ -59,7 +59,7 @@
     var openCardTitle = '<div class="card-title p-3">';
     var closeCardTitle = '</div>';
     var headlineString = '<h2 class="callToActionHeaderColor' + headlineColor + ' my-2" id="label' + contentID + '">' + headline + '</h2>';
-    var openLinksList = '<ul class="callToActionButtonWrapper standardContent d-flex flex-nowrap justify-content-between">';
+    var openLinksList = '<ul class="callToActionButtonWrapper standardContent d-flex flex-col flex-md-row flex-md-nowrap justify-md-content-between">';
     var closeLinksList = '</ul>';
     var btnOneString = '<li class="callToActionButton"><a href="' + btnOneLink + '" title="' + btnOneTitle + '">' + btnOneText + '</a></li>';
     var buttonListString = '' + btnOneString + '';
