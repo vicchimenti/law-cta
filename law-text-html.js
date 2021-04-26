@@ -48,7 +48,7 @@
      *  Declare/Assign local variables with default formatting and values
      * 
      * */
-    var imageString = '<img class="card-image" src="' + backgroundImage +'" alt="decorative background image for ' + headline + '">';
+    var imageString = '<img class="card-image-top" src="' + backgroundImage +'" alt="decorative background image for ' + headline + '">';
     var openOverlay = '<div class="card-img-overlay card-inverse p-0">';
     var closeOverlay = '</div>';
     var opneOverlayStyle = '<div class="callToActionOverlay callToActionOverlayColor' + colorOverlay + ' m-0">';
