@@ -157,14 +157,11 @@
      * 
      * */
     var imageString = '<img class="card-image-top" src="' + backgroundImage +'" alt="decorative background image for ' + headline + '">';
-    var openOverlay = '<div class="card-img-overlay card-inverse p-0">';
-    var closeOverlay = '</div>';
+
     var opneOverlayStyle = '<div class="callToActionOverlay callToActionOverlayColor' + colorOverlay + ' m-0">';
     var closeOverlayStyle = '</div>';
-    var openBlock = '<div class="card-block px-3 py-1 mb-1">';
-    var closeBlock = '</div>';
-    var openCardTitle = '<div class="card-title p-3">';
-    var closeCardTitle = '</div>';
+
+
     var openLinksList = '<ul class="callToActionButtonWrapper standardContent d-flex flex-col flex-md-row flex-md-nowrap justify-md-content-between">';
     var closeLinksList = '</ul>';
     var btnOneString = '<li class="callToActionButton"><a href="' + btnOneLink + '" title="' + btnOneTitle + '">' + btnOneText + '</a></li>';
@@ -172,8 +169,13 @@
 
 
 
-    let headlineString = '<h2 class="callToActionHeaderColor' + ctafDict.headlineColor.content + ' my-2">' + ctafDict.headline.content + '</h2>';
-
+    let openOverlay = '<div class="card-img-overlay card-inverse p-0">';
+    let closeOverlay = '</div>';
+    let openBlock = '<div class="card-block">';
+    let closeBlock = '</div>';
+    let openCardTitle = '<div class="card-title p-lg-3">';
+    let closeCardTitle = '</div>';
+    let headlineString = '<h2 class="callToActionHeaderColor' + ctafDict.headlineColor.content + ' text-center">' + ctafDict.headline.content + '</h2>';
     let openCardGroup = '<div class="col-12 card-group border-0 rounded-0">';
     let closeCardGroup = '</div>';
     let beginningHTML = '<div class="callToActionWrapper contentItem container-fluid g-0" id="ctaf' + ctafDict.contentId.content + '" data-position-default="Main" data-position-selected="Main">';
@@ -248,23 +250,30 @@
                 beginningHTML,
                 ctafDict.anchorTag.content,
 
+                openOverlay,
+
+
+                openCardTitle,
+                headlineString,
+                closeCardTitle,
+
+                openBlock,
                 openCardGroup,
+
 
                 openImageWrapper,
                 imageString,
                 closeImageWrapper,
+
                 openCardBody,
-                titleLink,
-                publishedLink,
-                summaryString,
-                dateline,
-                openHidden,
-                listOfCats,
-                pinnedItem,
-                closeHidden,
+
                 closeCardBody,
 
+                
                 closeCardGroup,
+                closeBlock,
+                
+                closeOverlay,
                 endingHTML
             ]
         );
