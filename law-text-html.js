@@ -1,17 +1,123 @@
 /***
- *      @author Victor Chimenti, MSCS-SE '20
+ *      @author Victor Chimenti, MSCS
  *      @file call-to-action-text-html.js
  *      @see Seattle University School of Law Call to Action Feature Content Type
  *      law/text/html
  *
  *      Document will write once when the page loads
  *
- *      @version 2.19
+ *      @version 3.0
  */
 
 
 
 
+
+
+
+
+/***
+ *      Import T4 Utilities
+ */
+ importClass(com.terminalfour.media.IMediaManager);
+ importClass(com.terminalfour.spring.ApplicationContextProvider);
+ importClass(com.terminalfour.publish.utils.BrokerUtils);
+ importClass(com.terminalfour.media.utils.ImageInfo);
+ 
+ 
+ 
+ 
+ /***
+  *      Extract values from T4 element tags
+  *      and confirm valid existing content item field and trim strings
+  */
+ function getContentValues(tag) {
+ 
+     try {
+ 
+         let _tag = BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, tag).trim()
+ 
+         return {
+             isError: false,
+             content: _tag == '' ? null : _tag
+         }
+ 
+     } catch (error) {
+ 
+         return {
+             isError: true,
+             message: error.message
+         }
+     }
+ }
+ 
+ 
+ 
+ 
+ /***
+  *      Returns a media object
+  */
+ function getMediaInfo(mediaID) {
+ 
+     let mediaManager = ApplicationContextProvider.getBean(IMediaManager);
+     let media = mediaManager.get(mediaID, language);
+ 
+     return media;
+ }
+ 
+ 
+ 
+ 
+ /***
+  *      Returns a media stream object
+  */
+ function readMedia(mediaID) {
+ 
+     let mediaObj = getMediaInfo(mediaID);
+     let oMediaStream = mediaObj.getMedia();
+ 
+     return oMediaStream;
+ }
+ 
+ 
+ 
+ 
+ /***
+  *      Returns an array of list items
+  */
+ function assignList(arrayOfValues) {
+ 
+     let listValues = '';
+ 
+     for (let i = 0; i < arrayOfValues.length; i++) {
+ 
+         listValues += '<li class="tag">' + arrayOfValues[i].trim() + '</li>';
+     }
+ 
+     return listValues;
+ }
+ 
+ 
+ 
+ 
+ /***
+  *      Write the document
+  */
+ function writeDocument(array) {
+ 
+     for (let i = 0; i < array.length; i++) {
+ 
+         document.write(array[i]);
+     }
+ }
+ 
+ 
+ 
+ 
+ 
+ /***
+  *      Main
+  */
  try {
 
     /***
