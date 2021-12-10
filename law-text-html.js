@@ -231,6 +231,33 @@
 
 
 
+    /***
+     *  write document once
+     * 
+     * */
+         writeDocument(
+            [
+                beginningHTML,
+                openImageWrapper,
+                imageString,
+                closeImageWrapper,
+                openCardBody,
+                titleLink,
+                publishedLink,
+                summaryString,
+                dateline,
+                openHidden,
+                listOfCats,
+                pinnedItem,
+                closeHidden,
+                closeCardBody,
+                endingHTML
+            ]
+        );
+
+
+
+
 } catch (err) {
     document.write(err.message);
 }
