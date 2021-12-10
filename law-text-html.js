@@ -106,7 +106,11 @@
     /***
      *      Dictionary of content
      * */
-    let ctafDict = {}
+    let ctafDict = {
+
+        contentName: getContentValues('<t4 type="content" name="Name" output="normal" modifiers="striptags,htmlentities" />'),
+
+    }
 
     /***
      *  Assign local variables from the content type's fields
