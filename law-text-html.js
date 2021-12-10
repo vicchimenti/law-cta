@@ -181,30 +181,30 @@
      *      Button Links
      * 
      * */
-    if (btnTwoLink != "" && btnTwoText != "") {
+    // if (btnTwoLink != "" && btnTwoText != "") {
 
-        var btnTwoString = '<li class="callToActionButton"><a href="' + btnTwoLink + '" title="' + btnTwoTitle + '">' + btnTwoText + '</a></li>';
-        buttonListString += '' + btnTwoString + '';
+    //     var btnTwoString = '<li class="callToActionButton"><a href="' + btnTwoLink + '" title="' + btnTwoTitle + '">' + btnTwoText + '</a></li>';
+    //     buttonListString += '' + btnTwoString + '';
 
-        if (btnThreeLink != "" && btnThreeText != "") {
+    //     if (btnThreeLink != "" && btnThreeText != "") {
 
-            var btnThreeString = '<li class="callToActionButton"><a href="' + btnThreeLink + '" title="' + btnThreeTitle + '">' + btnThreeText + '</a></li>';
-            buttonListString += '' + btnThreeString + '';
+    //         var btnThreeString = '<li class="callToActionButton"><a href="' + btnThreeLink + '" title="' + btnThreeTitle + '">' + btnThreeText + '</a></li>';
+    //         buttonListString += '' + btnThreeString + '';
 
-            if (btnFourLink != "" && btnFourText != "") {
+    //         if (btnFourLink != "" && btnFourText != "") {
 
-                var btnFourString = '<li class="callToActionButton"><a href="' + btnFourLink + '" title="' + btnFourTitle + '">' + btnFourText + '</a></li>';
-                buttonListString += '' + btnFourString + '';
+    //             var btnFourString = '<li class="callToActionButton"><a href="' + btnFourLink + '" title="' + btnFourTitle + '">' + btnFourText + '</a></li>';
+    //             buttonListString += '' + btnFourString + '';
 
-                if (btnFiveLink != "" && btnFiveText != "") {
+    //             if (btnFiveLink != "" && btnFiveText != "") {
 
-                    var btnFiveString = '<li class="callToActionButton"><a href="' + btnFiveLink + '" title="' + btnFiveTitle + '">' + btnFiveText + '</a></li>';
-                    buttonListString += ''  + btnFiveString + '';
+    //                 var btnFiveString = '<li class="callToActionButton"><a href="' + btnFiveLink + '" title="' + btnFiveTitle + '">' + btnFiveText + '</a></li>';
+    //                 buttonListString += ''  + btnFiveString + '';
         
-                }
-            }
-        }
-    }
+    //             }
+    //         }
+    //     }
+    // }
 
 
 
