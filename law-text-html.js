@@ -149,7 +149,7 @@
     let openCardTitle = '<div class="card-title p-lg-3">';
     let closeCardTitle = '</div>';
     let headlineString = '<h2 class="callToActionHeaderColor' + ctafDict.headlineColor.content + ' text-center">' + ctafDict.headline.content + '</h2>';
-    let openCardGroup = '<div class="col-12 card-group border-0 rounded-0">';
+    let openCardGroup = '<div class="card-group flex-column flex-lg-row">';
     let closeCardGroup = '</div>';
     let beginningHTML = '<div class="callToActionWrapper contentItem container-fluid g-0" id="ctaf' + ctafDict.contentId.content + '" data-position-default="Main" data-position-selected="Main">';
     let endingHTML = '</div>';
