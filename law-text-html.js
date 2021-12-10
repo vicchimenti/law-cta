@@ -192,9 +192,9 @@
                 beginningHTML,
                 ctafDict.anchorTag.content,
 
+
                 openOverlay,
-
-
+                opneOverlayStyle,
                 openCardTitle,
                 headlineString,
                 closeCardTitle,
@@ -203,9 +203,7 @@
                 openCardGroup,
 
 
-                openImageWrapper,
-                imageString,
-                closeImageWrapper,
+
 
                 openCardBody,
 
@@ -214,7 +212,7 @@
                 
                 closeCardGroup,
                 closeBlock,
-
+                closeOverlayStyle,
                 closeOverlay,
                 endingHTML
             ]
