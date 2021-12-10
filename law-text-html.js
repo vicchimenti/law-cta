@@ -198,7 +198,6 @@
                 openCardTitle,
                 headlineString,
                 closeCardTitle,
-
                 openBlock,
                 openCardGroup,
 
