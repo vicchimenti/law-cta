@@ -123,45 +123,23 @@
     }
 
 
-        /***
-     *  Parse for image
-     * 
-     * */
-         if (ctafDict.backgroundImage.content) {
-
-            let imageID = content.get('Background Image').getID();
-            let mediaInfo = getMediaInfo(imageID);
-            let media = readMedia(imageID);
-            let info = new ImageInfo;
-            info.setInput(media);
-    
-            let imageDefaultAlt = ctafDict.headline.content || ctafDict.contentName.content;
-    
-            imageString = (info.check()) ?
-                '<img src="' + majorDict.frontPageImage.content + '" class="articleImage figure-img card-img-top" aria-label="' + mediaInfo.getName() + '" alt="' + mediaInfo.getDescription() + '" width="' + info.getWidth() + '" height="' + info.getHeight() + '" loading="auto" />' :
-                '<img src="' + majorDict.frontPageImage.content + '" class="articleImage figure-img card-img-top" alt="' + imageDefaultAlt + '" loading="auto" />';
-    
-            openImageWrapper = '<figure class="figure">';
-        }
-
-
 
     /***
      *  Declare/Assign local variables with default formatting and values
      * 
      * */
-    var imageString = '<img class="card-image-top" src="' + backgroundImage +'" alt="decorative background image for ' + headline + '">';
 
 
 
 
-    var openLinksList = '<ul class="callToActionButtonWrapper standardContent d-flex flex-col flex-md-row flex-md-nowrap justify-md-content-between">';
-    var closeLinksList = '</ul>';
-    var btnOneString = '<li class="callToActionButton"><a href="' + btnOneLink + '" title="' + btnOneTitle + '">' + btnOneText + '</a></li>';
-    var buttonListString = '' + btnOneString + '';
+    // var openLinksList = '<ul class="callToActionButtonWrapper standardContent d-flex flex-col flex-md-row flex-md-nowrap justify-md-content-between">';
+    // var closeLinksList = '</ul>';
+    // var btnOneString = '<li class="callToActionButton"><a href="' + btnOneLink + '" title="' + btnOneTitle + '">' + btnOneText + '</a></li>';
+    // var buttonListString = '' + btnOneString + '';
 
-
-
+    let openCardBody = '<div class="card border-0 rounded-0">';
+    let closeCardBody = '</div>';
+    let imageString = '<img class="card-image-top visually-hidden">';
     let opneOverlayStyle = '<div class="callToActionOverlay callToActionOverlayColor' + ctafDict.colorOverlay.content + ' m-0">';
     let closeOverlayStyle = '</div>';
     let openOverlay = '<div class="card-img-overlay card-inverse p-0">';
@@ -177,6 +155,27 @@
     let endingHTML = '</div>';
 
 
+
+    /***
+     *  Parse for image
+     * 
+     * */
+    if (ctafDict.backgroundImage.content) {
+
+        let imageID = content.get('Background Image').getID();
+        let mediaInfo = getMediaInfo(imageID);
+        let media = readMedia(imageID);
+        let info = new ImageInfo;
+        info.setInput(media);
+
+        let imageDefaultAlt = ctafDict.headline.content || ctafDict.contentName.content;
+
+        imageString = (info.check()) ?
+            '<img src="' + ctafDict.backgroundImage.content + '" class="card-img-top" aria-label="' + mediaInfo.getName() + '" alt="' + mediaInfo.getDescription() + '" width="' + info.getWidth() + '" height="' + info.getHeight() + '" loading="auto" />' :
+            '<img src="' + ctafDict.backgroundImage.content + '" class="card-img-top" alt="' + imageDefaultAlt + '" loading="auto" />';    
+    }
+
+
     /***
      *  write document once
      * 
@@ -185,8 +184,7 @@
             [
                 beginningHTML,
                 ctafDict.anchorTag.content,
-
-
+                imageString,
                 openOverlay,
                 opneOverlayStyle,
                 openCardTitle,
@@ -194,15 +192,9 @@
                 closeCardTitle,
                 openBlock,
                 openCardGroup,
-
-
-
-
                 openCardBody,
 
                 closeCardBody,
-
-                
                 closeCardGroup,
                 closeBlock,
                 closeOverlayStyle,
