@@ -171,7 +171,7 @@
     var btnOneString = '<li class="callToActionButton"><a href="' + btnOneLink + '" title="' + btnOneTitle + '">' + btnOneText + '</a></li>';
     var buttonListString = '' + btnOneString + '';
 
-    let openCardGroup = '<div class="col-12 card border-0">';
+    let openCardGroup = '<div class="col-12 card-group border-0 rounded-0">';
     let closeCardGroup = '</div>';
     let beginningHTML = '<div class="callToActionWrapper contentItem container-fluid g-0" id="ctaf' + ctafDict.contentId.content + '" data-position-default="Main" data-position-selected="Main">';
     let endingHTML = '</div>';
