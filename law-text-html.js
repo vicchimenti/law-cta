@@ -165,11 +165,14 @@
     var closeBlock = '</div>';
     var openCardTitle = '<div class="card-title p-3">';
     var closeCardTitle = '</div>';
-    var headlineString = '<h2 class="callToActionHeaderColor' + headlineColor + ' my-2" id="label' + contentId + '">' + headline + '</h2>';
     var openLinksList = '<ul class="callToActionButtonWrapper standardContent d-flex flex-col flex-md-row flex-md-nowrap justify-md-content-between">';
     var closeLinksList = '</ul>';
     var btnOneString = '<li class="callToActionButton"><a href="' + btnOneLink + '" title="' + btnOneTitle + '">' + btnOneText + '</a></li>';
     var buttonListString = '' + btnOneString + '';
+
+
+
+    let headlineString = '<h2 class="callToActionHeaderColor' + ctafDict.headlineColor.content + ' my-2">' + ctafDict.headline.content + '</h2>';
 
     let openCardGroup = '<div class="col-12 card-group border-0 rounded-0">';
     let closeCardGroup = '</div>';
@@ -243,6 +246,10 @@
          writeDocument(
             [
                 beginningHTML,
+                ctafDict.anchorTag.content,
+
+                openCardGroup,
+
                 openImageWrapper,
                 imageString,
                 closeImageWrapper,
@@ -256,6 +263,8 @@
                 pinnedItem,
                 closeHidden,
                 closeCardBody,
+
+                closeCardGroup,
                 endingHTML
             ]
         );
