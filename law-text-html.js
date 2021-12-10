@@ -155,6 +155,38 @@
     let endingHTML = '</div>';
 
 
+    /***
+     *  Parse for Cards
+     *  each card requires a minimum of a link text and link path
+     *  Card 1 requires these by default, cards 2 - 6 are enforced logically
+     * */
+    if (infoDict.statNumOne.content) {
+
+        // set card defaults
+        let openCardWrapperOne = '<div class="cardinfographicItem card border-0 rounded-0 color' + infoDict.statColorOne.content + '">';
+        let openCardBodyOne = '<div class="card-body p-0 m-3">';
+        let cardNumOne = '<div class="infographicItemNumber"><span class="card-text text-center">' + infoDict.statNumOne.content + '</span></div>';
+        let cardHeadingOne = '<div class="infographicItemHeader"><p class="card-title text-center text-uppercase">' + infoDict.statHeadingOne.content + '</p></div>';
+        let closeCardBodyOne = '</div>';
+        let closeCardWrapperOne = '</div>';
+
+        // parse for icon
+        let cardIconOne =   (infoDict.statIconOne.content)
+                            ? '<div class="infographicItemIcon"><span class="text-center fa ' + infoDict.statIconOne.content + '"></span></div>'
+                            : '<div class="infographicItemIcon visually-hidden"><span class="visually-hidden">No Icon</span></div>';
+
+        // parse for text
+        let cardTextOne =   (infoDict.statTextOne.content)
+                            ? '<div class="infographicItemText standardContent card-text"><p class="card-title text-center">' + infoDict.statTextOne.content + '</p></div>'
+                            : '<div class="infographicItemText visually-hidden"><span class="visually-hidden">No Text</span></div>';
+
+
+        let cardOne = openCardWrapperOne + openCardBodyOne + cardIconOne + cardNumOne + cardHeadingOne + cardTextOne + closeCardBodyOne + closeCardWrapperOne;
+
+        cardDeck = cardOne;
+    }
+
+
 
     /***
      *  Parse for image
