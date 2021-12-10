@@ -6,7 +6,7 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 3.0
+ *      @version 3.1
  */
 
 
@@ -203,26 +203,26 @@
      *  write document once
      * 
      * */
-         writeDocument(
-            [
-                beginningHTML,
-                ctafDict.anchorTag.content,
-                imageString,
-                openOverlay,
-                opneOverlayStyle,
-                openCardTitle,
-                headlineString,
-                closeCardTitle,
-                openBlock,
-                openCardGroup,
-                cardDeck,
-                closeCardGroup,
-                closeBlock,
-                closeOverlayStyle,
-                closeOverlay,
-                endingHTML
-            ]
-        );
+    writeDocument(
+        [
+            beginningHTML,
+            ctafDict.anchorTag.content,
+            imageString,
+            openOverlay,
+            opneOverlayStyle,
+            openCardTitle,
+            headlineString,
+            closeCardTitle,
+            openBlock,
+            openCardGroup,
+            cardDeck,
+            closeCardGroup,
+            closeBlock,
+            closeOverlayStyle,
+            closeOverlay,
+            endingHTML
+        ]
+    );
 
 
     // document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, beginningHTML));
