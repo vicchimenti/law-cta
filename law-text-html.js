@@ -158,8 +158,7 @@
      * */
     var imageString = '<img class="card-image-top" src="' + backgroundImage +'" alt="decorative background image for ' + headline + '">';
 
-    var opneOverlayStyle = '<div class="callToActionOverlay callToActionOverlayColor' + colorOverlay + ' m-0">';
-    var closeOverlayStyle = '</div>';
+
 
 
     var openLinksList = '<ul class="callToActionButtonWrapper standardContent d-flex flex-col flex-md-row flex-md-nowrap justify-md-content-between">';
@@ -169,6 +168,8 @@
 
 
 
+    let opneOverlayStyle = '<div class="callToActionOverlay callToActionOverlayColor' + ctafDict.colorOverlay.content + ' m-0">';
+    let closeOverlayStyle = '</div>';
     let openOverlay = '<div class="card-img-overlay card-inverse p-0">';
     let closeOverlay = '</div>';
     let openBlock = '<div class="card-block">';
@@ -180,17 +181,6 @@
     let closeCardGroup = '</div>';
     let beginningHTML = '<div class="callToActionWrapper contentItem container-fluid g-0" id="ctaf' + ctafDict.contentId.content + '" data-position-default="Main" data-position-selected="Main">';
     let endingHTML = '</div>';
-
-
-
-
-
-
-
-
-
-
-
 
 
     /***
@@ -229,9 +219,6 @@
                 endingHTML
             ]
         );
-
-
-
 
 
     document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, beginningHTML));
