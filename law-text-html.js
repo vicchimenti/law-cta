@@ -102,6 +102,12 @@
   */
  try {
 
+
+    /***
+     *      Dictionary of content
+     * */
+    let ctafDict = {}
+
     /***
      *  Assign local variables from the content type's fields
      * 
